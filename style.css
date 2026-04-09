@@ -25,3 +25,8 @@ p{
     word-wrap: break-word;
     word-break: break-word;
 }
+
+#descricao_user{
+    margin-top: 60px;
+    margin-left: -150px;
+}
