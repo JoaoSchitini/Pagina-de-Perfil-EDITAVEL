@@ -6,7 +6,7 @@ const botaoemail = document.getElementById("botao_email")
 const botaodescricao = document.getElementById("botao_descricao")
 const corperfil = document.getElementById("cor_perfil")
 const botaocor = document.getElementById("botao_cor")
-let cores = ["#cdced1", "#ff7f7f", "#7fff99", "#ff7fea", "#f6ff7f"]
+let cores = ["#ff7f7f", "#7fff99", "#ff7fea", "#f6ff7f", "#cdced1"]
 let i = 0
 
 botaonome.addEventListener("click", function(){
