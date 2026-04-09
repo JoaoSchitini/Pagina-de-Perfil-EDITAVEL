@@ -4,6 +4,10 @@ let descricao = document.getElementById("descricao_user")
 const botaonome = document.getElementById("botao_nome")
 const botaoemail = document.getElementById("botao_email")
 const botaodescricao = document.getElementById("botao_descricao")
+const corperfil = document.getElementById("cor_perfil")
+const botaocor = document.getElementById("botao_cor")
+let cores = ["#cdced1", "#ff7f7f", "#7fff99", "#ff7fea", "#f6ff7f"]
+let i = 0
 
 botaonome.addEventListener("click", function(){
     let inputnome = prompt("Digite seu nome: ")
@@ -11,8 +15,7 @@ botaonome.addEventListener("click", function(){
         alert("Mudança Cancelada")
     }
     else (nome.innerHTML = inputnome)
-}
-)
+})
 
 botaoemail.addEventListener("click", function(){
     let inputemail = prompt("Digite seu email: ")
@@ -20,8 +23,7 @@ botaoemail.addEventListener("click", function(){
         alert("Mudança Cancelada")
     }
     else (email.innerHTML = inputemail)
-}
-)
+})
 
 botaodescricao.addEventListener("click", function(){
     let inputdescricao = prompt("Digite sua descrição: ")
@@ -29,5 +31,9 @@ botaodescricao.addEventListener("click", function(){
         alert("Mudança Cancelada")
     }
     else (descricao.innerHTML = inputdescricao)
-}
-)
+})
+
+botaocor.addEventListener("click", function(){
+    corperfil.style.backgroundColor = cores[i]
+    i = (i + 1) % cores.length
+})
